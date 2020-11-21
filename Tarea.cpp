@@ -13,7 +13,7 @@ printf("Ingrese peso del paciente en kilogramos: ");
 scanf("%d",&peso);
     */
 do //Las opciones
-{   printf("¿Qué medicamento desea dosificar? \n");
+{   printf("Â¿QuÃ© medicamento desea dosificar? \n");
     printf( " 1.  Noradrenalina \n");
     printf( " 2.  Adrenalina \n");
     printf( " 3.  Fentanilo \n");
@@ -27,19 +27,19 @@ do //Las opciones
     printf( " 11. Lidocaina \n");
     printf( " 12. Cloruro de Potasio \n");
     do{
-        printf("Introduzca la opción(1-12) y pulse enter: ");
+        printf("Introduzca la opciÃ³n(1-12) y pulse enter: ");
         scanf("%d",&opcion);
         }
     while (opcion <1 || opcion>12); //CODIGO 1234 PARA SACAR LOOP
     switch ( opcion ){
 case 1:     do{
-            printf( "\n   Concentración(mg)/Dilusión(ml) de Adrenalina : " ); //ADRENALINA
+            printf( "\n   ConcentraciÃ³n(mg)/DilusiÃ³n(ml) de Adrenalina : " ); //ADRENALINA
             scanf( "%d %d", &cantidadmg,&cantidadml ); //hacer lo que haya que hacer
             printf( "Su dosis es %d/%d  \n",cantidadmg,cantidadml );
             printf("Agregue la dosis: (gamma*kilogramo*minuto) \n");
             scanf("%f",&dosis);
-            printf("La dosis es %.4f, ¿confirmar?   \n",dosis); //CONFIRMAR CON PALABRA
-        do{printf("Aceptar o Cancelar \n");
+            printf("La dosis es %.4f, Â¿confirmar?   \n",dosis); //CONFIRMAR CON PALABRA???
+        do{printf("Aceptar o Cancelar \n"); //Hice un Loop para darle a aceptar o cancelar y al presionar cancelar deberia empezar 
             scanf("%s",confirmar);}
             while(strcmp(confirmar,"aceptar") !=0 || strcmp(confirmar,"cancelar") !=0);
 }
