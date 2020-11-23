@@ -35,7 +35,8 @@ do //Las opciones
 case 1:     do{
             printf( "\n   Concentración(mg)/Dilusión(ml) de Adrenalina : " ); //ADRENALINA
             scanf( "%d %d", &cantidadmg,&cantidadml ); //hacer lo que haya que hacer
-            printf( "Su dosis es %d/%d  \n",cantidadmg,cantidadml );
+          float division= (cantidadmg/cantidadml);
+            printf( "Su dosis es %.4f mg/ml\n",division );
             printf("Agregue la dosis: (gamma*kilogramo*minuto) \n");
             scanf("%f",&dosis);
             printf("La dosis es %.4f, ¿confirmar?   \n",dosis); //CONFIRMAR CON PALABRA???
